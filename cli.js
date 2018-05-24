@@ -76,6 +76,11 @@ const cli = meow(`
     },
     debug: {
       type: 'boolean'
+    },
+    // name? match/pattern/filter
+    filter: {
+      type: 'string',
+      alias: 'f'
     }
   }
 })
@@ -92,6 +97,7 @@ const opts = Object.assign({
   filename,
   stats,
   outDir: 'dist',
+  filter: '**/*',
   basename: '',
   scope: {},
   pkg,
