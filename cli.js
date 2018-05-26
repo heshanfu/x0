@@ -28,6 +28,7 @@ const cli = meow(`
   Options
 
       --webpack       Path to webpack config file
+      --match         Glob pattern to match files against
 
     Dev Server
 
@@ -77,10 +78,8 @@ const cli = meow(`
     debug: {
       type: 'boolean'
     },
-    // name? match/pattern/filter
-    filter: {
+    match: {
       type: 'string',
-      alias: 'f'
     }
   }
 })
@@ -97,7 +96,6 @@ const opts = Object.assign({
   filename,
   stats,
   outDir: 'dist',
-  filter: '**/*',
   basename: '',
   scope: {},
   pkg,
