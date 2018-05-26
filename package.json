@@ -1,6 +1,6 @@
 {
   "name": "@compositor/x0",
-  "version": "5.0.0-11",
+  "version": "5.0.0-13",
   "description": "Zero-config React development environment and static site generator",
   "main": "index.js",
   "bin": {
@@ -17,7 +17,7 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
-    "@compositor/jsx-loader": "^1.0.0-2",
+    "@compositor/jsx-loader": "^1.0.0-3",
     "@compositor/log": "^1.0.0-0",
     "@mdx-js/loader": "^0.9.0",
     "@mdx-js/mdx": "^0.9.0",
@@ -43,9 +43,9 @@
     "mini-html-webpack-plugin": "^0.2.3",
     "minimatch": "^3.0.4",
     "pkg-conf": "^2.1.0",
-    "react": "^16.3.2",
+    "react": "^16.4.0",
     "react-dev-utils": "^5.0.1",
-    "react-dom": "^16.3.2",
+    "react-dom": "^16.4.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "read-pkg-up": "^3.0.0",
@@ -56,13 +56,14 @@
     "webpack-serve": "^1.0.2"
   },
   "devDependencies": {
-    "ava": "^0.24.0",
+    "ava": "^0.25.0",
     "isomorphic-fetch": "^2.2.1",
     "nano-style": "^1.0.0",
     "nyc": "^11.8.0",
     "rebass": "^2.0.0-2",
-    "refunk": "^2.2.4",
-    "styled-components": "^3.2.6",
+    "refunk": "^3.0.1",
+    "rimraf": "^2.6.2",
+    "styled-components": "^3.3.0",
     "styled-system": "^2.2.5"
   },
   "x0": {
